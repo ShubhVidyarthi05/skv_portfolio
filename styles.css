@@ -8,6 +8,15 @@
     font-style: normal;
   }
 
+
+  @font-face {
+    font-family: 'DRUZHOK';
+    src: url('fonts/DRUZHOK.otf') format('opentype'); /* Replace 'path/to/' with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 *{
     margin: 0;
     padding: 0;
