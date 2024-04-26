@@ -455,7 +455,7 @@ left: calc(50% - 32.5vw/2);
     text-decoration: none;
 }
 
-.magneto{
+#magneto{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -463,14 +463,14 @@ left: calc(50% - 32.5vw/2);
     margin: 10vw 30vw;
 }
 
-.magneto .message_svg{
+#magneto .message_svg{
     width:30vw;
     grid-area: 1/1;
     margin-right: 6vw;
     cursor: pointer;
 }
 
-.magneto .message{
+#magneto .message{
     grid-area:1/1;
     z-index: 3;
     font-family: Futura Md BT;
