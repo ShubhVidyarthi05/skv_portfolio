@@ -16,6 +16,22 @@
     font-style: normal;
   }
 
+/* Normal weight */
+  @font-face {
+    font-family: "Futura";
+    src: url('fonts/futura medium bt.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Italic weight */
+  @font-face {
+    font-family: "Futura";
+    src: url('fonts/Futura Medium Italic font.ttf');
+    font-weight: normal;
+    font-style: italic;
+  }
+
 
 *{
     margin: 0;
@@ -98,7 +114,7 @@
 .socials, .navigation{
     display: flex;
     flex-direction: column;
-    font-size: 4vw;
+    font-size: 4rem;
     font-family: 'Recoleta', sans-serif;
     margin: 2vw;
     gap: 2rem;
