@@ -37,3 +37,20 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 // Mouse movement tracker
+const magneto = document.getElementById("magneto");
+
+magneto.addEventListener('mouseenter', function(){
+  trailer.style.backgroundColor = '#cd2c2c';
+  trailer.style.width = '200px';
+  trailer.style.height = '200px';
+  trailer.style.borderRadius = '50%';
+});
+
+magneto.addEventListener('mouseleave', function(){
+  trailer.style.backgroundColor = '#ffffff';
+trailer.style.width = '15px';
+trailer.style.height = '15px';
+trailer.style.borderRadius = '50%';
+});
+
+

@@ -26,8 +26,23 @@
 
   /* Italic weight */
   @font-face {
-    font-family: "Futura";
+    font-family: "Futura italic";
     src: url('fonts/Futura Medium Italic font.ttf');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Futura light italic";
+    src: url('fonts/Futura Light Italic font.ttf');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: "Futura bold italic";
+    src: url('fonts/tt0205m_.ttf');
     font-weight: normal;
     font-style: italic;
   }
@@ -118,6 +133,7 @@
     font-family: 'Recoleta', sans-serif;
     margin: 2vw;
     gap: 2rem;
+    z-index: 12;
 }
 
 .socials>a, .navigation>a{
@@ -141,7 +157,7 @@ h6:hover{
 }
 
 .socials{
-    font-size: 3vw;
+    font-size: 3rem;
 }
 
 
@@ -488,7 +504,7 @@ left: calc(50% - 32.5vw/2);
 
 #magneto .message{
     grid-area:1/1;
-    z-index: 3;
+    z-index: 12;
     font-family: Futura Md BT;
     color:#0f0d0e;
     text-align: center;
@@ -543,6 +559,15 @@ left: calc(50% - 32.5vw/2);
         transform: rotate(90deg);
         width: 500vw;
         height: 200vh;
+    }
+
+    .menu-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: top;
+        gap: 9vw;
+        z-index: 10;
     }
   }
 
@@ -667,6 +692,7 @@ img {
   }
 
 
+
 /* ABOUT PAGE */
 #about > #trailer{
     background-color: #F9F4DA;
@@ -674,6 +700,64 @@ img {
 /* Mouse */
 #about{
     background: #0f0d0e;
+}
+
+/* .background_img{
+    background-image: url('logo/skvLogo.svg');
+    background-size:cover; 
+    background-position: center top;
+    width: 500px; 
+    height: 500px;
+} */
+
+.about_me{
+    margin-left: 10vw;
+    font-family: "Futura bold italic";
+    color: #cd2c2c;
+    position: absolute;
+    top: 40%;
+    font-size: xxx-large;
+}
+.line{
+    width: 100%;
+    height:1px;
+    background: linear-gradient(to right, #0f0d0e, #F9F4DA, #0f0d0e);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.photo {
+    position: relative;
+    z-index: 2;
+    margin-right: 11em;
+    scale: 1.5;
+}
+
+.aalsi {
+    position: relative;
+    z-index: 1;
+    margin-right: 3em;
+    font-family: "Futura light italic";
+    font-size: small;
+    color: #F9F4DA;
+}
+
+.bold-word{
+    font-weight: bold;
+}
+
+.about_text{
+    margin: 10vw;
+    line-height: 1.8;
+    font-family: "Futura light italic";
+    color: #F9F4DA;
+    position: absolute;
+    top: 60%;
+    font-size: medium;
 }
 
 footer{

@@ -52,6 +52,9 @@ gsap.from(".arrow", {opacity: 0, y:50, duration:1});
 gsap.to(".all-cover-dark", {y:-2000, duration:1.5, ease:"power3.inOut"});
 gsap.to(".all-cover-light", {y:-2000, duration:1.5, ease:"power3.inOut"});
 gsap.from(".title", {opacity: 0, x:100, duration:1});
+gsap.from(".abt", {opacity: 0, y:-100, duration:1.3});
+gsap.from(".line", {opacity: 0, scale:0, duration:1, delay:.5, ease:"power3.out"});
+gsap.from(".about_text", {opacity: 0, y:100, duration:1});
 
 
 
@@ -94,10 +97,10 @@ function removeTinglesOnMobile() {
 // Call the function on page load
 removeTinglesOnMobile();
 
-document.querySelector('.dots').addEventListener('click', function() {
-  var ele = document.querySelector('.menu_container');
-  ele.classList.toggle('hidden');
-})
+// document.querySelector('.dots').addEventListener('click', function() {
+//   var ele = document.querySelector('.menu_container');
+//   ele.classList.toggle('hidden');
+// })
 
 
 

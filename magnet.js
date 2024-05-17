@@ -1,8 +1,8 @@
 //Magnetic effect on hover
 
-const magneto = document.querySelector('.magneto');
+const magneto = document.querySelector('#magneto');
 const zigzag = document.querySelector('.introduction .svg-background');
-const magnetoText = document.querySelector('.magneto .message');
+const magnetoText = document.querySelector('#magneto .message');
 // const menuItems = document.querySelector('.socials a');
 
 //Mouse move stuff
@@ -13,7 +13,7 @@ const activateMagneto = (event) => {
 
     const magnetoStrength = 40;
     const magnetoTextStrength = 80;
-    const zigzagStrength = 40;
+    const zigzagStrength = 180;
     // const menuItemStrength = 30;
     const newX = ((event.clientX - boundBox.left)/magneto.offsetWidth)-0.5;
     const newY = ((event.clientY - boundBox.top)/magneto.offsetHeight)-0.5;
@@ -66,7 +66,7 @@ const resetMagneto = (event) => {
       duration:1,
       x: 0,
       y: 0,
-      ease: 'power4.inOut'
+      ease: 'elastic.out'
   });
 
     gsap.to(magnetoText,{
