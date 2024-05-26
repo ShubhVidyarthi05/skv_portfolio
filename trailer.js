@@ -37,20 +37,25 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 // Mouse movement tracker
-const magneto = document.getElementById("magneto");
 
-magneto.addEventListener('mouseenter', function(){
-  trailer.style.backgroundColor = '#cd2c2c';
-  trailer.style.width = '200px';
-  trailer.style.height = '200px';
-  trailer.style.borderRadius = '50%';
-});
+// document.getElementById('magneto').addEventListener('mouseenter', (e) => {
+//   const background = document.querySelector('.message');
+//   const rect = background.getBoundingClientRect();
+//   const x = ((e.clientX - rect.left) / rect.width) * 100;
+//   const y = ((e.clientY - rect.top) / rect.height) * 100;
+  
+//   background.style.clipPath = `circle(0% at ${x}% ${y}%)`;
+//   background.style.backgroundColor = 'red';
 
-magneto.addEventListener('mouseleave', function(){
-  trailer.style.backgroundColor = '#ffffff';
-trailer.style.width = '15px';
-trailer.style.height = '15px';
-trailer.style.borderRadius = '50%';
-});
+//   requestAnimationFrame(() => {
+//       background.style.clipPath = `circle(150% at ${x}% ${y}%)`;
+//   });
+// });
+
+// document.getElementById('magneto').addEventListener('mouseleave', () => {
+//   const background = document.querySelector('.message');
+//   background.style.backgroundColor = 'blue';
+//   background.style.clipPath = `circle(0% at 50% 50%)`;
+// });
 
 

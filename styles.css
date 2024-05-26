@@ -226,7 +226,7 @@ nav{
 }
 
 .logo{
-    width: 2.5vw;
+    width: 4rem;
     z-index:21;
 }
 
@@ -464,8 +464,6 @@ left: calc(50% - 32.5vw/2);
     align-items: center;
     flex-shrink: 0;
     padding: 0 1em;
-    /* transform: translateX(0);
-    animation: scroll 5s linear infinite; */
 }
 
 /* @keyframes scroll {
@@ -476,10 +474,6 @@ left: calc(50% - 32.5vw/2);
 .direction{
     width: 1.5vw;
     margin: 1.2em 0 1em 1em;
-}
-
-.direction:hover{
-    transform: rotate(180deg);
 }
 
 
@@ -526,17 +520,22 @@ left: calc(50% - 32.5vw/2);
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    nav{
+        margin-top: -8vw;
+    }
     .logo{
         width: 6vw;
-        margin-top:7%;
+        margin-top:2%;
     margin-left: 6%;
     }
+
     .menu-open{
         width: 10vw;
         display: flex;
-        margin-top:4%;
+        margin-top:1%;
     margin-right: 6%;
     }
+
     .introduction{
         padding-top : 5%;
         padding-left: 25%;
@@ -548,13 +547,16 @@ left: calc(50% - 32.5vw/2);
     .name{
     font-size: 12vw;
     }
+
     .svg-background{
         top:6vw;
         left:65vw;
       }
+
     .qualities{
         height: 100vh;
     }
+    
     .checker{
         transform: rotate(90deg);
         width: 500vw;
@@ -696,6 +698,7 @@ img {
 /* ABOUT PAGE */
 #about > #trailer{
     background-color: #F9F4DA;
+    pointer-events: none;
 }
 /* Mouse */
 #about{
