@@ -58,4 +58,15 @@ document.addEventListener("DOMContentLoaded", function() {
 //   background.style.clipPath = `circle(0% at 50% 50%)`;
 // });
 
+const tinglesElement = document.getElementById('trailer');
+
+function removeTinglesOnMobile() {
+  if (window.innerWidth <= 768) {
+    tinglesElement.remove();
+  }
+}
+
+// Call the function on page load
+removeTinglesOnMobile();
+
 

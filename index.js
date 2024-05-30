@@ -108,10 +108,6 @@ removeTinglesOnMobile();
 
 
 
-
-
-
-
 //Lenis
 // const entries = document.querySelectorAll('.entry')
 
