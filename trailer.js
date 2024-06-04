@@ -27,12 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
   // Add event listeners to all links on the page
   const links = document.querySelectorAll("a");
   links.forEach(link => {
-    link.addEventListener("mouseenter", () => {
+    link.addEventListener("mouseenter", (event) => {
+      if (event.target.classList.contains("animate_link")) {
       tm.play();
+      }
     });
 
-    link.addEventListener("mouseleave", () => {
+    link.addEventListener("mouseleave", (event) => {
+      if (event.target.classList.contains("animate_link")) {
       tm.reverse();
+      }
     });
   });
 });
@@ -58,15 +62,14 @@ document.addEventListener("DOMContentLoaded", function() {
 //   background.style.clipPath = `circle(0% at 50% 50%)`;
 // });
 
-const tinglesElement = document.getElementById('trailer');
+const trailerElement = document.getElementById('trailer');
 
-function removeTinglesOnMobile() {
+function removeTrailerOnMobile() {
   if (window.innerWidth <= 768) {
-    tinglesElement.remove();
+    trailerElement.remove();
   }
 }
 
-// Call the function on page load
-removeTinglesOnMobile();
+removeTrailerOnMobile();
 
 

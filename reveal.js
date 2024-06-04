@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
         aalsi.style.marginRight = "-17em"; // Hide the text
     });
 });
+
+const tinglesElement = document.querySelector('.aalsi');
+
+function removeTinglesOnMobile() {
+  if (window.innerWidth <= 768) {
+    tinglesElement.remove();
+  }
+}
+
+// Call the function on page load
+removeTinglesOnMobile();
