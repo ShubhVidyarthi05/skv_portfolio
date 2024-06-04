@@ -49,6 +49,13 @@ const activateMagneto = (event) => {
 
 //Mouse leave stuff
 const resetMagneto = (event) => {
+
+  // Check if the screen width is greater than 768px (tablet and desktop)
+  if (window.innerWidth <= 768) {
+    return; // Exit the function if on mobile
+  }
+
+  
     //Move the button to it's original position
     gsap.to(magneto,{
         duration:1,
