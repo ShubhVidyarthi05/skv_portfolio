@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-const tinglesElement = document.querySelector('.aalsi');
+const aalsiElement = document.querySelector('.aalsi');
 
-function removeTinglesOnMobile() {
+function removeAalsiOnMobile() {
   if (window.innerWidth <= 768) {
-    tinglesElement.remove();
+    aalsiElement.remove();
   }
 }
 
 // Call the function on page load
-removeTinglesOnMobile();
+removeAalsiOnMobile();
