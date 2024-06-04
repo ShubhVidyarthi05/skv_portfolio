@@ -3,24 +3,25 @@
 const magneto = document.querySelector('#magneto');
 const zigzag = document.querySelector('.introduction .svg-background');
 const magnetoText = document.querySelector('#magneto .message');
-// const menuItems = document.querySelector('.socials a');
 
 //Mouse move stuff
 const activateMagneto = (event) => {
+
+  // Check if the screen width is greater than 768px (tablet and desktop)
+  if (window.innerWidth <= 768) {
+    return; // Exit the function if on mobile
+  }
+
     let boundBox = magneto.getBoundingClientRect();
     let zigBox = zigzag.getBoundingClientRect();
-    // let menuBox = menuItems.getBoundingClientRect();
 
     const magnetoStrength = 40;
     const magnetoTextStrength = 80;
     const zigzagStrength = 180;
-    // const menuItemStrength = 30;
     const newX = ((event.clientX - boundBox.left)/magneto.offsetWidth)-0.5;
     const newY = ((event.clientY - boundBox.top)/magneto.offsetHeight)-0.5;
     const zigX = ((event.clientX - zigBox.left)/zigzag.offsetWidth);
     const zigY = ((event.clientY - zigBox.top)/zigzag.offsetHeight);
-    // const menuX = ((event.clientX - menuBox.left)/menuBox.offsetWidth);
-    // const menuY = ((event.clientY - menuBox.top)/menuBox.offsetHeight);
 
     gsap.to(magneto, {
         duration:1,
@@ -42,12 +43,6 @@ const activateMagneto = (event) => {
         y: newY * magnetoTextStrength,
         ease: "power4.out",
     })
-
-    // gsap.to(menuItems, {
-    //   duration:1,
-    //   x: menuX * menuItemStrength,
-    //   y: menuY * menuItemStrength,
-    // })
 
 }
 
