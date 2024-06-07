@@ -531,12 +531,6 @@ left: calc(50% - 32.5vw/2);
     }
 }
 
-.border{
-    width: 100%;
-    border: 1px solid var(--reddish);
-    margin: 10vw 0;
-}
-
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -707,7 +701,7 @@ img {
 
 .entry figure {
     width: 100%;
-    margin-bottom: 20px; /* Space between figures */
+    margin-bottom: 10px; /* Space between figures */
 }
 
 .entry figure:last-child {
@@ -828,6 +822,12 @@ img {
         font-size: small;
         top: auto;
     }
+}
+
+.border{
+    width: 100%;
+    border: 1px solid var(--reddish);
+    margin: 10% 0;
 }
 
 footer{

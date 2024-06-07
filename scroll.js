@@ -107,7 +107,7 @@ ScrollTrigger.matchMedia({
               scrollTrigger: {
                   trigger: left,
                   start: "top 100%", // Adjust start trigger to the default state
-                  end: "top 100%",
+                //   end: "top 100%",
                   scrub: false,
               }
           });
@@ -120,7 +120,7 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: right, // Use current .entry element as trigger
                 start: "top 100%", // Adjust start trigger 
-               end: "top 100%",
+            //    end: "top 100%",
                scrub: false,
             }
         });
