@@ -47,6 +47,9 @@ function revealMenu() {
           opacity: 1, // Fade in the menu
           y: 0, // Move the menu container to the center (reveal from the bottom)
           ease: "power1 .out", // Easing function for smooth animation
+          onComplete: () => {
+            document.body.classList.add('no-scroll');
+        }
       });
   } else {
       // If menu is visible, hide it
@@ -55,6 +58,10 @@ function revealMenu() {
           opacity: 0, // Fade out the menu
           y: "100%", // Move the menu container back outside the viewport (to the bottom)
           ease: "power1.in", // Easing function for smooth animation
+          onComplete: () => {
+            document.body.classList.remove('no-scroll');
+        }
+        
       });
   }
 }
