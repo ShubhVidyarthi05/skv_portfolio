@@ -4,43 +4,6 @@ const tl = gsap.timeline({
 });
 tl.to("[data-animation='text-reveal'] > *",{
 });
-// Logo and dots popup
-
-
-
-// const content = document.getElementById("hero");
-// let currentPos = window.pageYOffset;
-
-// const callDistort = function(){
-//     const newPos = window.pageYOffset;   
-
-
-//     const diff = newPos - currentPos;
-//     const speed = diff* .05;
-
-//     content.style.transform = "skewY(" + speed + "deg)";
-//     currentPos = newPos;
-//     requestAnimationFrame(callDistort);
-// };
-
-// callDistort();
-
-// MENU
-
-// const menu = document.querySelector('.nav-container');
-// const menuOpenButton = document.querySelector('.menu-open');
-// const menuCloseButton = document.querySelector('.menu-close');
-
-// const openMenu = function(){
-//     menu.classList.remove('hidden');
-// }
-
-// const closeMenu = function(){
-//     menu.classList.add('hidden');
-// }
-
-// menuOpenButton.addEventListener('click', openMenu);
-// menuCloseButton.addEventListener('click', closeMenu);
 
 
 
@@ -97,109 +60,15 @@ function removeTinglesOnMobile() {
 // Call the function on page load
 removeTinglesOnMobile();
 
-// document.querySelector('.dots').addEventListener('click', function() {
-//   var ele = document.querySelector('.menu_container');
-//   ele.classList.toggle('hidden');
-// })
-
-
-
-
-
-
-
-//Lenis
-// const entries = document.querySelectorAll('.entry')
-
-// entries.forEach((entry) => {
-//   let left = entry.querySelector('.left')
-//   let right = entry.querySelector('.right')
-
-//   gsap.set(left,{
-//     xPercent:-100,
-//     opacity:0
-//   })
-
-//   gsap.set(right,{
-//     xPercent:100,
-//     opacity:0
-//   })+
-// })
-
-  // gsap.to("left",{
-  //   scrollTrigger:{
-  //     trigger: "left",
-  //     start: 'top bottom',
-  //     end: 'bottom 90%',
-  //     markers:true,
-  //     scrub: true
-  //   },
-  //   y:0,
-  //   opacity:1,
-  // })
-
-// const images = document.querySelectorAll('.entry img');
-
-//   images.forEach(image => {
-//     image.addEventListener('mouseenter', function() {  
-//       gsap.to(this, {
-//         skewX: 20, // Adjust the skew angle
-//         duration: 0.3, // Duration of the skew effect
-//         ease: 'power2.out' // Easing function
-//       });
-//     });
-
-//     image.addEventListener('mouseleave', function() {
-//       gsap.to(this, {
-//         skewX: 0, // Return to the original skew
-//         duration: 0.3, // Duration of the transition
-//         ease: 'power2.out' // Easing function
-//       });
-//     });
-//   });
-
-
-// const wrapper = document.getElementById('tiles');
-// let columns = Math.floor(document.body.clientWidth / 50);
-// let rows = Math.floor(document.body.clientHeight / 50);
-// let resizeTimeout;
-
-// const createTile = () => {
-//   const tile = document.createElement('div');
-//   tile.classList.add("tile");
-//   return tile;
-// }
-
-// const createTiles = (quantity) => {
-//   const fragment = document.createDocumentFragment();
-//   for (let i = 0; i < quantity; i++) {
-//     fragment.appendChild(createTile());
-//   }
-//   wrapper.appendChild(fragment);
-// }
-
-// const createGrid = () => {
-//   wrapper.innerHTML = "";
-//   columns = Math.floor(document.body.clientWidth / 50);
-//   rows = Math.floor(document.body.clientHeight / 300);
-//   wrapper.style.setProperty("--columns", columns);
-//   wrapper.style.setProperty("--rows", rows);
-//   createTiles(columns * rows);
-// }
-
-// const debouncedCreateGrid = () => {
-//   clearTimeout(resizeTimeout);
-//   resizeTimeout = setTimeout(createGrid, 100); // Adjust delay as needed
-// };
-
-// createGrid();
-
-// window.addEventListener("resize", debouncedCreateGrid);
-
-
-
-
-
+document.querySelector('.menu').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  var body = document.body;
+  if (body.classList.contains('no_container')) {
+      body.classList.remove('no_container');
+  } else {
+      body.classList.add('no_container');
+  }
+});
 
 const lenis = new Lenis()
 

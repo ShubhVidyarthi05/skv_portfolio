@@ -23,7 +23,7 @@ const createGrid = () =>{
   wrapper.innerHTML = "";
 
   columns = Math.floor(document.body.clientWidth/50);
-  rows = Math.floor(document.body.clientHeight/320);
+  rows = Math.floor(document.body.clientHeight/500);
   wrapper.style.setProperty("--columns", columns);
   wrapper.style.setProperty("--rows", rows);
   

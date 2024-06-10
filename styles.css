@@ -61,9 +61,6 @@
     box-sizing: border-box;
 }
 
-.no_scroll{
-    overflow: hidden;
-}
 
 .all-cover-dark{
     position: fixed;
@@ -84,6 +81,10 @@
     }
 }
 
+.no_container{
+    position: fixed;
+    overflow: hidden;
+}
 
 .menu_container{
     position: fixed;
@@ -160,12 +161,12 @@ text-shadow: .1vw .05vw 0vw black;
 
 h5:hover{
     transform: scale(1.05);
-    transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 h6:hover{
     transform: scale(1.05);
-    transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 .socials{
@@ -616,6 +617,10 @@ left: calc(50% - 32.5vw/2);
     /* overscroll-behavior: none; */
 }
 
+#illustrations > footer{
+    color: var(--blackish);
+}
+
 
 .title{
     color: #000;
@@ -651,7 +656,7 @@ left: calc(50% - 32.5vw/2);
 
 #portfolio {
     padding-block: 8rem;
-    margin: 5vw;
+    margin: 5vw ;
 }
 
 .entry {
@@ -680,7 +685,7 @@ img {
     display: flex;
     justify-content:center;
     align-items: center;
-
+    margin-bottom: -13em;
 }
 .cat img{
     width: 90%;
@@ -689,9 +694,10 @@ img {
 
 @media only screen and (max-width: 768px) {
 .title{
-    font-size: 3vw;
+    font-size: x-large;
     height: 30vh;
     padding-top: 5rem;
+    min-height: 50vh;
 }
 
 .entry {
@@ -701,12 +707,9 @@ img {
 
 .entry figure {
     width: 100%;
-    margin-bottom: 10px; /* Space between figures */
+    margin-bottom: 7em;
 }
 
-.entry figure:last-child {
-    margin-bottom: 0;
-}
 img {
     width: 100%;
     object-fit: cover;
@@ -750,7 +753,6 @@ img {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    overflow: hidden;
 }
 
 .photu {
@@ -760,6 +762,14 @@ img {
     scale: 1;
     overflow: visible;
     transition: all 0.3s ease-in-out; /* Smooth transition for the image */
+}
+
+.profile_photu{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
 }
 
 .aalsi {
@@ -778,7 +788,6 @@ img {
 .photu:hover {
     transform: scale(0.9); /* Slightly scale the image to create an interactive feel */
 }
-
 
 .bold-word{
     font-weight: bold;
@@ -846,9 +855,7 @@ footer{
             
 }
 
-#illustrations > footer{
-    color: var(--blackish);
-}
+
 
 
 /* Lenis CSS */

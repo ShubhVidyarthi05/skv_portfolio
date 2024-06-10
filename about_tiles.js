@@ -46,7 +46,7 @@ function revealMenu() {
           duration: 0.4,
           opacity: 1, // Fade in the menu
           y: 0, // Move the menu container to the center (reveal from the bottom)
-          ease: "power1 .out", // Easing function for smooth animation
+          ease: "power1.out", // Easing function for smooth animation
       });
   } else {
       // If menu is visible, hide it
