@@ -98,5 +98,16 @@ magneto.addEventListener('click', (event) => {
 });
 
 
+const messageElement = document.querySelector('.message_svg');
+
+function removeMessageOnMobile() {
+  if (window.innerWidth <= 768) {
+    messageElement.remove();
+  }
+}
+
+removeMessageOnMobile();
+
+
 
 

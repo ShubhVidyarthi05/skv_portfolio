@@ -408,7 +408,7 @@ font-size: 8vw;
 }
 .rip1, .rip2, .rip3, .rip4{
     top: 3290px;   
-    border: 0.5rem solid var(--bluish);
+    border: 0.5em solid var(--bluish);
     border-radius: 50%;
 }
 .rip1{
@@ -505,7 +505,7 @@ left: calc(50% - 32.5vw/2);
     grid-area:1/1;
     z-index: 12;
     font-family: Futura;
-    color:#0f0d0e;
+    color:var(--blackish);
     text-align: center;
     cursor: pointer;
 }
@@ -587,8 +587,39 @@ left: calc(50% - 32.5vw/2);
         z-index: 10;
     }
 
+    .rip1, .rip2, .rip3, .rip4{ 
+        border: 0.3em solid var(--bluish);
+        border-radius: 50%;
+    }
+
+    .rip1{
+        width: 10vw;
+        height: 10vw;
+        left: calc(50% - 10vw/2);
+        }
+        .rip2{
+            width: 28vw;
+            height: 28vw;
+            left: calc(50% - 28vw/2);
+            }
+    .rip3{
+    width: 50vw;
+    height: 50vw;
+    left: calc(50% - 50vw/2);
+    }
+    
+    .rip4{
+        width: 75vw;
+        height: 75vw;
+        left: calc(50% - 75vw/2);
+        }
+
     #magneto{
-        margin: 0;
+        margin: 10em;
+    }
+
+    #magneto .message{
+        color:var(--whitish);
     }
 
     #magneto .message_svg{
