@@ -54,6 +54,9 @@
     --bluish: #292956;
   }
 
+  html, body {
+    overflow-y: hidden;
+}
 
 *{
     margin: 0;
@@ -621,13 +624,13 @@ left: calc(50% - 32.5vw/2);
     #magneto .message{
         color:var(--whitish);
     }
-
-    #magneto .message_svg{
-        width:15em;
-        grid-area: 1/1;
-        margin-right: 6vw;
-        cursor: pointer;
+    .messageS{
+        font-size: x-large;
     }
+    .messageL{
+        font-size: xx-large;
+    }
+
   }
 
   @media only screen and (max-width: 2560px) {
@@ -797,18 +800,17 @@ img {
 }
 
 .profile_photu{
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 22vw;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease-in-out;
 }
 
 .aalsi {
     position: relative;
     z-index: 1;
-    margin-right: -17em; /* Start the text hidden behind the image */
     margin-top: 11em;
+    margin-right: -19em;
     font-family: "Futura light italic";
     font-size: small;
     color: var(--whitish);
@@ -818,7 +820,7 @@ img {
 
 
 .photu:hover {
-    transform: scale(0.9); /* Slightly scale the image to create an interactive feel */
+    transform: scale(0.98); /* Slightly scale the image to create an interactive feel */
 }
 
 .bold-word{
@@ -836,20 +838,28 @@ img {
 }
 
 @media (max-width: 768px) {
-    .about_me {
-        margin-left: 5vw;
-        font-size: x-large;
-        top: 30%;
-    }
 
     .containar {
+        margin: 15rem;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
     }
 
     .photu {
-        margin: 1em 0;
+        position: relative;
+        z-index: 2;
+        transform: scale(2);
+        overflow: visible;
+    }
+
+    .photu:hover {
+        transform: scale(2); /* Slightly scale the image to create an interactive feel */
+    }
+    
+    .profile_photu{
+        width: 25vw;
+        height: 22vw;
+        object-fit: cover;
     }
 
     .aalsi {

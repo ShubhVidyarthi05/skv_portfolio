@@ -60,7 +60,7 @@ function removeTinglesOnMobile() {
 // Call the function on page load
 removeTinglesOnMobile();
 
-document.querySelector('.menu').addEventListener('click', function(event) {
+document.querySelector('.dots').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent the default link behavior
   var body = document.body;
   if (body.classList.contains('no_container')) {

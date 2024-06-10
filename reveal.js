@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     photu.addEventListener("mouseleave", function() {
-        aalsi.style.marginRight = "-17em"; // Hide the text
+        aalsi.style.marginRight = "-19em"; // Hide the text
     });
 });
 
