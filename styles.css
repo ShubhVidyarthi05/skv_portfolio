@@ -734,6 +734,7 @@ img {
 .entry {
     display: block;
     text-align: center;
+    margin: 6rem 1rem;
 }
 
 .entry figure {
