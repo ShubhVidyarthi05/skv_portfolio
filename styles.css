@@ -139,7 +139,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: top;
-    gap: 9vw;
+    gap: 9rem;
     z-index: 10;
 }
 
@@ -618,8 +618,29 @@ left: calc(50% - 32.5vw/2);
         left: calc(50% - 75vw/2);
         }
 
+        .menu-box{
+            margin-top:5rem;
+            gap:2rem;
+        }
+
+    .socials{
+        font-size: x-large;
+        margin: .25rem;
+    gap: 1rem;
+    }
+
+    .navigation{
+        font-size: xx-large;
+        margin: .25rem;
+        gap: 1rem;  
+    }
+
     #magneto{
         margin: 10em;
+    }
+
+    #magneto .message_svg{
+        margin: 0;
     }
 
     #magneto .message{
