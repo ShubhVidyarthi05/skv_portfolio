@@ -54,6 +54,7 @@
     --bluish: #292956;
   }
 
+  /* Remove scroll bar */
   html, body {
     overflow-y: hidden;
 }
@@ -539,18 +540,18 @@ left: calc(50% - 32.5vw/2);
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     nav{
-        margin-top: -3vw;
+        margin-top: 0vw;
     }
     .logo{
         width: 6vw;
-        margin-top:2%;
+        margin-top:4vw;
     margin-left: 6%;
     }
 
     .menu-open{
         width: 10vw;
         display: flex;
-        margin-top:1%;
+        margin-top:5%;
     margin-right: 6%;
     }
 
