@@ -18,6 +18,7 @@ gsap.from(".title", {opacity: 0, x:100, duration:1});
 gsap.from(".abt", {opacity: 0, y:-100, duration:1.3});
 gsap.from(".line", {opacity: 0, scale:0, duration:1, delay:.5, ease:"power3.out"});
 gsap.from(".about_text", {opacity: 0, y:100, duration:1});
+gsap.from(".containar", {opacity: 0, y:100, duration:1});
 
 
 
