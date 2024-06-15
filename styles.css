@@ -537,6 +537,12 @@ left: calc(50% - 32.5vw/2);
 }
 
 
+@media only screen and (max-width: 600px) {
+    .qualities{
+        height: 100vh;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     nav{
@@ -572,9 +578,6 @@ left: calc(50% - 32.5vw/2);
         left:65vw;
       }
 
-    .qualities{
-        height: 100vh;
-    }
     
     .checker{
         transform: rotate(90deg);
@@ -626,8 +629,8 @@ left: calc(50% - 32.5vw/2);
     .socials{
         font-size: x-large;
         margin: .25rem;
-    gap: 1rem;
-    }
+        gap: 1rem;
+        }
 
     .navigation{
         font-size: xx-large;
@@ -760,7 +763,7 @@ img {
     display: block;
     text-align: center;
     margin: 6rem 1rem;
-}
+}                                            
 
 .entry figure {
     width: 100%;
@@ -840,7 +843,6 @@ img {
 }
 
 
-
 .photu:hover {
     transform: scale(0.98); /* Slightly scale the image to create an interactive feel */
 }
@@ -860,40 +862,36 @@ img {
 }
 
 @media (max-width: 768px) {
+    .about_me {
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .line {
+        margin: 0 auto;
+    }
 
     .containar {
-        margin: 15rem;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     .photu {
-        position: relative;
-        z-index: 2;
-        transform: scale(2);
-        overflow: visible;
-    }
-
-    .photu:hover {
-        transform: scale(2); /* Slightly scale the image to create an interactive feel */
-    }
-    
-    .profile_photu{
-        width: 25vw;
-        height: 22vw;
-        object-fit: cover;
-    }
-
-    .aalsi {
         margin-right: 0;
-        margin-top: 1em;
-        font-size: small;
+        margin-top: 10em;
+        margin-bottom: 5em;
+        transform: scale(2);
     }
+
 
     .about_text {
-        margin: 4vw 6vw;
+        margin: 2vw 5vw;
+        text-align: center;
         font-size: small;
-        top: auto;
     }
 }
 
