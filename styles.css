@@ -627,13 +627,13 @@ left: calc(50% - 32.5vw/2);
         }
 
     .socials{
-        font-size: x-large;
+        font-size: xx-large;
         margin: .25rem;
         gap: 1rem;
         }
 
     .navigation{
-        font-size: xx-large;
+        font-size: xxx-large;
         margin: .25rem;
         gap: 1rem;  
     }
