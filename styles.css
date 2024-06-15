@@ -887,6 +887,9 @@ img {
         transform: scale(2);
     }
 
+    .photu:hover {
+        transform: scale(2); 
+    }
 
     .about_text {
         margin: 2vw 5vw;
