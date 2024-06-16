@@ -18,7 +18,7 @@ gsap.from(".title", {opacity: 0, x:100, duration:1});
 gsap.from(".abt", {opacity: 0, y:-100, duration:1.3});
 gsap.from(".line", {opacity: 0, scale:0, duration:1, delay:.5, ease:"power3.out"});
 gsap.from(".about_text", {opacity: 0, y:100, duration:1});
-gsap.from(".containar", {opacity: 0, y:100, duration:1});
+gsap.from(".containar", {opacity: 0, x:100, duration:1});
 
 
 
@@ -70,6 +70,22 @@ document.querySelector('.dots').addEventListener('click', function(event) {
       body.classList.add('no_container');
   }
 });
+
+function revealMenuAndRedirect() {
+  revealMenu(); // Call the function to reveal the menu
+
+  // Wait for the reveal animation to finish (adjust the duration as needed)
+  setTimeout(function() {
+      window.location.href = 'index.html'; // Redirect to the desired page
+  }, 500); // Adjust the timeout to match the duration of the reveal animation
+}
+
+window.addEventListener('load', function() {
+  const targetElement = document.querySelector('#magneto');
+  if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+},200);
 
 const lenis = new Lenis()
 

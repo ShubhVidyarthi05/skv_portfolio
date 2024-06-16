@@ -66,20 +66,3 @@ menuIcon.addEventListener('click', function() {
   revealMenu();
 });
 
-
-// function revealMenuAndRedirect() {
-//   revealMenu(); // Call the function to reveal the menu
-
-//   // Wait for the reveal animation to finish (adjust the duration as needed)
-//   setTimeout(function() {
-//       window.location.href = 'main.html'; // Redirect to the desired page
-//   }, 500); // Adjust the timeout to match the duration of the reveal animation
-// }
-
-// Scroll to #magneto after page has loaded
-// window.addEventListener('load', function() {
-//   const targetElement = document.querySelector('#magneto');
-//   if (targetElement) {
-//       targetElement.scrollIntoView({ behavior: 'smooth' });
-//   }
-// },2000);

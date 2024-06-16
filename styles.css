@@ -54,6 +54,10 @@
     --bluish: #292956;
   }
 
+
+  html {
+    scroll-behavior: smooth;
+}
   /* Remove scroll bar */
   html, body {
     overflow-y: hidden;
